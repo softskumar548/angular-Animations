@@ -1,0 +1,49 @@
+.cardWarpper {
+    width: 200px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 0px 10px 10px 10px;
+
+    .content,
+    button,
+    .imageDiv {
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        margin-bottom: 8px;
+    }
+
+    .imageDiv {
+        text-align: right;
+    }
+
+    &.default {
+        .content {
+            max-height: 4.5em;
+        }
+    }
+
+    &.hover {
+        .content {
+            max-height: 20em;
+        }
+    }
+
+    button {
+        background-color: #000;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 20px;
+        height: 100%;
+        margin: 0;
+    }
+
+    .imageDiv img {
+        width: 40%;
+        height: auto;
+        border: 4px solid lightblue;
+        border-radius: 50%;
+        padding: 15px;
+    }
+
+}
